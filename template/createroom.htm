@@ -1,0 +1,78 @@
+{template common/header}
+
+
+
+<div class="wp cl">
+
+    <div class="main">
+        <div class="left">
+            <link href="source/plugin/cqgame/css/style.css" rel="stylesheet" type="text/css">
+            {template cqgame:nav}
+
+
+            <div class="pta">
+                <img style="float:left;" src="source/plugin/cqgame/images/dq.png"><span style="float:left;">&nbsp;<a href="plugin.php?id=cqgame">{lang cqgame:createroom_1}</a> &gt;&gt; {lang cqgame:createroom_2}</span>
+                <span style="float:right;">&nbsp;<!--{if $_G[lj_tips]}-->$_G[lj_tips]<!--{else}-->$config['gg']<!--{/if}--></span><img style="float:right;" src="source/plugin/cqgame/images/gg.png">
+            </div>
+            <div class="table">
+
+                <div style="padding: 0 10px 10px;">
+                    <table cellspacing="0" cellpadding="4" border="0" width="95%">
+                        <tr style="height:32px;">
+                            <form action="plugin.php?id=cqgame&act=createroom" name="addhome" method="post">
+                                <td>
+                                    <input type="hidden" name="formhash" value="{FORMHASH}">
+                                    <input type="hidden" name="ea55_suiji" value="{$_SESSION['ea55_suijishu_cqgame']}">
+                                    <span style="color:red;">*</span>&nbsp;{lang cqgame:createroom_3}{$_G['setting']['extcredits'][$config['credit']]['title']}&nbsp;:&nbsp;<input type="text" size="20" name="guessmoney" value="$config['min']"> {lang cqgame:createroom_4}{$config['min']}{$_G['setting']['extcredits'][$config['credit']]['title']}{lang cqgame:createroom_5} {$config['max']}{$_G['setting']['extcredits'][$config['credit']]['title']}
+                                </td>
+                        </tr>
+                        <tr style="height:32px;"><td><span style="color:red;">*</span>&nbsp;{lang cqgame:createroom_6}<input type="text" size="20" name="roomnum" value="">{lang cqgame:createroom_7}$config['roomnum']{lang cqgame:createroom_8}</td></tr>
+                        <tr style="height:38px;">
+                            <td>
+                                <span style="color:red;">*</span>&nbsp;{lang cqgame:createroom_9}
+                                <input type="radio" name="myguess" value="0" checked>{lang cqgame:createroom_10}<img src="source/plugin/cqgame/images/fingerguess/0.gif" border=0 align=absmiddle width=30 height=30>
+                                <input type="radio" name="myguess" value="1">{lang cqgame:createroom_11}<img src="source/plugin/cqgame/images/fingerguess/1.gif" border=0 align=absmiddle width=30 height=30>
+                                <input type="radio" name="myguess" value="2">{lang cqgame:createroom_12}<img src="source/plugin/cqgame/images/fingerguess/2.gif" border=0 align=absmiddle width=30 height=30>
+                                <input type="radio" name="myguess" value="3">{lang cqgame:createroom_13}<img src="source/plugin/cqgame/images/fingerguess/3.gif" border=0 align=absmiddle width=30 height=30>
+                            </td>
+                        </tr>
+                        <tr style="height:29px;">
+                            <td>
+                                <span style="color:red;">*</span>&nbsp;{lang cqgame:createroom_14}
+                                <!--{if $config['isdn']}--><input type="radio" name="guesstype" value="0" checked>{lang cqgame:createroom_15} <!--{/if}-->
+                                <input type="radio" name="guesstype" value="1" <!--{if !$config['isdn']}-->checked<!--{/if}-->>{lang cqgame:createroom_16}
+                                <input type="radio" name="guesstype" value="2">{lang cqgame:createroom_17}
+                            </td>
+                        </tr>
+                        <tr style="height:32px;">
+                            <td>
+                                {lang cqgame:createroom_18} <input type="text" size="20" name="yourname" value=""> {lang cqgame:createroom_19}
+                            </td>
+                        </tr>
+                        <tr>
+                             <td>&nbsp;&nbsp;&nbsp;&nbsp;{lang cqgame:createroom_20} <input type="text" size="35" name="guessremark" value=""> {lang cqgame:createroom_21}</td>
+                        </tr>
+                        <tr style="height:30px;">
+                             <td><input type="submit" name="submit" value="{lang cqgame:createroom_26}">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <tr style="height:22px;"><td><hr size=1 color="{BORDERCOLOR}"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="notice" style="border:1px dashed #f60; background-color:#FFC">
+                                    $roomtsy
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pag">
+                    <div style="float:left;">&nbsp;&nbsp;{lang cqgame:createroom_22}<span class="STYLE3">{eval echo count($homelist)}</span>{lang cqgame:createroom_23}<!--£¬{lang cqgame:createroom_24}&nbsp;<!--{if $_G['lj_page']}-->$_G['lj_page'}<!--{else}-->1<!--{/if}-->&nbsp;{lang cqgame:createroom_25}--></div>{$paging}
+
+                </div>
+            </div>
+        </div>
+        {template cqgame:right}
+    </div>
+</div>
+</div>
+{template common/footer}

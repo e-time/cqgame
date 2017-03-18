@@ -1,0 +1,41 @@
+{template common/header}
+<div class="wp cl">
+
+<div class="main">
+<div class="left"><link href="source/plugin/cqgame/css/style.css" rel="stylesheet" type="text/css">
+{template cqgame:nav}
+
+
+<div class="pta">
+<img style="float:left;" src="source/plugin/cqgame/images/dq.png"><span style="float:left;">&nbsp;<a href="plugin.php?id=cqgame">{lang cqgame:createroom_1}</a> &gt;&gt; {lang cqgame:log_1}</span>
+<span style="float:right;">&nbsp;<!--{if $_G[lj_tips]}-->$_G[lj_tips]<!--{else}-->$config['gg']<!--{/if}--></span><img style="float:right;" src="source/plugin/cqgame/images/gg.png">
+</div>
+<div class="table">
+<table width="720" cellspacing="1" cellpadding="0">
+  <tbody><tr align="center">
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:log_2}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:log_3}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:log_4}</strong></td>
+  </tr>
+<!--{loop $loglist $log}-->
+    <tr align="center" height="28">
+    <td bgcolor="#fffac7" style="border:1px solid #ff9900;border-top:none"><a href="home.php?mod=space&uid=<!--{eval echo C::t('common_member')->fetch_uid_by_username($log[yourname])}-->">$log[yourname]</a></td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none"><!--{eval echo date('Y-m-d H:i:s',$log['guesstime'])}--></td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none">
+   $log[guessmoney]
+    
+</td>
+  </tr>
+<!--{/loop}-->
+</tbody></table>
+<div class="pag">
+<div style="float:left;">&nbsp;&nbsp;{lang cqgame:createroom_22}<span class="STYLE3">{eval echo $num}</span>{lang cqgame:createroom_23}<!--£¬{lang cqgame:createroom_24}&nbsp;<!--{if $_G['lj_page']}-->$_G['lj_page']<!--{else}-->1<!--{/if}-->&nbsp;{lang cqgame:createroom_25}--></div>{$paging}
+
+</div>
+</div>
+</div>
+{template cqgame:right}
+</div>
+</div>
+</div>
+{template common/footer}

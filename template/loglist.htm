@@ -1,0 +1,56 @@
+{template common/header}
+<div class="wp cl">
+
+<div class="main">
+<div class="left"><link href="source/plugin/cqgame/css/style.css" rel="stylesheet" type="text/css">
+{template cqgame:nav}
+
+
+<div class="pta">
+<img style="float:left;" src="source/plugin/cqgame/images/dq.png"><span style="float:left;">&nbsp;<a href="plugin.php?id=cqgame">{lang cqgame:createroom_1}</a> &gt;&gt; {lang cqgame:loglist_1}</span>
+<span style="float:right;">&nbsp;<!--{if $_G[lj_tips]}-->$_G[lj_tips]<!--{else}-->$config['gg']<!--{/if}--></span><img style="float:right;" src="source/plugin/cqgame/images/gg.png">
+</div>
+<div class="table">
+<table width="720" cellspacing="1" cellpadding="0">
+  <tbody><tr align="center">
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:index_2}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:index_3}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:index_4}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:index_5}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:index_6}</strong></td>
+  </tr>
+  <!--{loop $homelist $home}-->
+    <tr align="center" height="28">
+    <td bgcolor="#fffac7" style="border:1px solid #ff9900;border-top:none">$home[id]</td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none">$home[username]</td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none">
+   $home[guessremark]
+    
+</td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none"><!--{if $home[guesstype]==2}-->{lang cqgame:index_7}$home[yourname]<!--{elseif $home[guesstype]==0}-->{lang cqgame:index_8}
+<!--{else}-->{lang cqgame:index_9}
+<!--{/if}--></td>
+   
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none;border-right:none">
+<span class="link"><!--{if $home[yess]}-->
+<a href="plugin.php?id=cqgame&act=enterroom&cid=$home[id]">{lang cqgame:index_10}</a>
+<!--{elseif $home[result]}-->
+<span onmouseover="showMenu(this.id);" id="viewmsg_{$home[id]}" initialized="true"><a class="red" href="javascript:;">{lang cqgame:index_12}</a></span>
+<div style="border: 1px solid rgb(204, 204, 204); background-color: rgb(242, 242, 242); padding: 10px; text-align: left; position: absolute; z-index: 301; left: 691.5px; top: 403.5px; display: none;" id="viewmsg_{$home[id]}_menu">$home[result]</div>
+<!--{else}-->{lang cqgame:index_13}
+<!--{/if}--></span>
+</td>
+  </tr>
+ <!--{/loop}-->
+</tbody></table>
+<div class="pag">
+<div style="float:left;">&nbsp;&nbsp;{lang cqgame:createroom_22}<span class="STYLE3">{eval echo $num}</span>{lang cqgame:createroom_23}<!--£¬{lang cqgame:createroom_24}&nbsp;<!--{if $_G['lj_page']}-->$_G['lj_page']<!--{else}-->1<!--{/if}-->&nbsp;{lang cqgame:createroom_25}--></div>{$paging}
+
+</div>
+</div>
+</div>
+{template cqgame:right}
+</div>
+</div>
+</div>
+{template common/footer}

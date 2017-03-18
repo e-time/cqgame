@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3]]></item>
+	<item id="Time"><![CDATA[2013-09-08 14:54]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/x3/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【亮剑】猜拳游戏]]></item>
+			<item id="identifier"><![CDATA[cqgame]]></item>
+			<item id="description"><![CDATA[最好玩的积分游戏。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[cqgame/]]></item>
+			<item id="copyright"><![CDATA[亮剑seo论坛(http://www.seoeye.cn)]]></item>
+			<item id="version"><![CDATA[3.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[app]]></item>
+					<item id="menu"><![CDATA[亮剑应用中心]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[cqgame]]></item>
+					<item id="menu"><![CDATA[猜拳游戏]]></item>
+					<item id="url"><![CDATA[plugin.php?id=cqgame]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否开启电脑对战]]></item>
+				<item id="description"><![CDATA[关闭后将不能和电脑对战，只允许玩家跟玩家对战]]></item>
+				<item id="variable"><![CDATA[isdn]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[平局奖励积分数]]></item>
+				<item id="description"><![CDATA[当对战双方出的是一样的时候为平局，奖励双方多少积分]]></item>
+				<item id="variable"><![CDATA[pj]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[选择游戏积分类型]]></item>
+				<item id="description"><![CDATA[请选择一种积分类型用于猜拳的积分]]></item>
+				<item id="variable"><![CDATA[credit]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[最小出拳积分]]></item>
+				<item id="description"><![CDATA[每次开房填写的最小出拳积分，小于出拳积分将无法创建房间]]></item>
+				<item id="variable"><![CDATA[min]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[最大出拳积分]]></item>
+				<item id="description"><![CDATA[每次开房填写的最大出拳积分，大于出拳积分将无法创建房间]]></item>
+				<item id="variable"><![CDATA[max]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[个人所得税]]></item>
+				<item id="description"><![CDATA[默认5%，您可根据实际情况做相应调整，用于回收论坛积分。]]></item>
+				<item id="variable"><![CDATA[tax]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[5%]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[论坛盈利指定UID]]></item>
+				<item id="description"><![CDATA[把猜拳的个人所得税（即论坛的盈利<除电脑对战外>）统一打到一个论坛帐号上，用来统计猜拳在您论坛给您带来的收益，建议创建一个新号（没有玩过猜拳的号）并把uid填写到此！]]></item>
+				<item id="variable"><![CDATA[uid]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[6]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[公告]]></item>
+				<item id="description"><![CDATA[为了排版（含标点符号在内）只能填写40个]]></item>
+				<item id="variable"><![CDATA[gg]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[想试试你的运气吗？]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[批量开房数]]></item>
+				<item id="description"><![CDATA[提交一次创建房间能开设的最大房间数量，如：填写10则每次提交创建房间的批量开房不能超过10个]]></item>
+				<item id="variable"><![CDATA[roomnum]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[允许猜拳的用户组]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[user]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[11]]></item>
+					<item id="2"><![CDATA[12]]></item>
+					<item id="3"><![CDATA[13]]></item>
+					<item id="4"><![CDATA[14]]></item>
+					<item id="5"><![CDATA[15]]></item>
+					<item id="6"><![CDATA[20]]></item>
+					<item id="7"><![CDATA[16]]></item>
+					<item id="8"><![CDATA[17]]></item>
+					<item id="9"><![CDATA[18]]></item>
+					<item id="10"><![CDATA[19]]></item>
+					<item id="11"><![CDATA[1]]></item>
+					<item id="12"><![CDATA[2]]></item>
+					<item id="13"><![CDATA[3]]></item>
+				</item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[不允许猜拳提示语]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[tsy]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[游戏正在测试中。。。。]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[SEO标题]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[亮剑猜拳]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[SEO关键字]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[keywords]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[亮剑猜拳]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[SEO描述]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[description]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[亮剑猜拳]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[创建房间底部提示语]]></item>
+				<item id="description"><![CDATA[｛tax｝=税率]]></item>
+				<item id="variable"><![CDATA[roomtsy]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[1.如果你的对方不是电脑那么请等待别人来参与猜拳 。<br/>
+2.指定用户只能为一个。<br/>
+3.猜拳赢的一方获得的是你设定的猜拳积分数，同时要收一定的个人所得税<font color=red>{tax}</font> 。<br/>
+4.创建房间时需要扣除你设定的猜拳积分数作为押金，赢则退还押金并且奖励您获取（胜利的积分）*个人所得税。输则把押金奖励给胜利人，平局则退还押金并且加上平局奖励积分。<br/>
+5.如果你创建的房间10天内没有人响应那么将作废且押金退还。<br/>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[是否开启自动清理]]></item>
+				<item id="description"><![CDATA[开启自动清理后**必须在自动清理时间中填写多少小时内没有人玩的房间才被清理]]></item>
+				<item id="variable"><![CDATA[iszdql]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[自动清理时间]]></item>
+				<item id="description"><![CDATA[如果开启自动清理，请这此填写多长时间自动清理一次没有人玩的房间（单位/小时）。]]></item>
+				<item id="variable"><![CDATA[zdqltime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[240]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[允许回收积分UID]]></item>
+				<item id="description"><![CDATA[**注意**此功能慎用，作弊总是不好的：）
+请填写允许查看开房人所出的是石头、剪刀、布的UID，符合的UID用户在进入房间在开房用户名旁边将显示出开房人所出的是石头、剪刀、布。
+多个用逗号隔开]]></item>
+				<item id="variable"><![CDATA[hsuid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[允许数据清理UID]]></item>
+				<item id="description"><![CDATA[**注意**
+填写的UID用户可以看到数据清理界面，请谨慎确认允许清理数据的用户UID是否填写正确。
+多个用逗号隔开]]></item>
+				<item id="variable"><![CDATA[qluid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[版权自定义]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[banquan]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<p>版权信息
+    </p>
+  <p>亮剑猜拳游戏 V2.5
+  </p>
+  <p><a href="http://www.dzx30.com" target="_blank">@亮剑Discuz!</a></p>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="cqgame_1"><![CDATA[请选登录]]></item>
+				<item id="cqgame_2"><![CDATA[积分不足！]]></item>
+				<item id="cqgame_3"><![CDATA[猜拳需要的积分不能小于]]></item>
+				<item id="cqgame_4"><![CDATA[猜拳需要的积分不能大于]]></item>
+				<item id="cqgame_5"><![CDATA[快来猜拳吧~]]></item>
+				<item id="cqgame_6"><![CDATA[猜拳需要的金钱必须填写！]]></item>
+				<item id="cqgame_7"><![CDATA[你出 ]]></item>
+				<item id="cqgame_8"><![CDATA[ ，电脑出 ]]></item>
+				<item id="cqgame_9"><![CDATA[ 。很遗憾，你输了。你的现金扣除 ]]></item>
+				<item id="cqgame_10"><![CDATA[ 。真扫兴，打平了。系统奖励你现金]]></item>
+				<item id="cqgame_11"><![CDATA[ 。恭喜你！你赢了！扣除 ]]></item>
+				<item id="cqgame_12"><![CDATA[ 的个人所得税后你的现金增加 ]]></item>
+				<item id="cqgame_13"><![CDATA[电脑]]></item>
+				<item id="cqgame_14"><![CDATA[你]]></item>
+				<item id="cqgame_15"><![CDATA[批量开房最多不能超过]]></item>
+				<item id="cqgame_16"><![CDATA[快来猜拳吧~]]></item>
+				<item id="cqgame_17"><![CDATA[指定用户不存在！]]></item>
+				<item id="cqgame_18"><![CDATA[不能只限定跟自己对战！]]></item>
+				<item id="cqgame_19"><![CDATA[个房间创建成功，失败]]></item>
+				<item id="cqgame_20"><![CDATA[个，共扣除押金]]></item>
+				<item id="cqgame_21"><![CDATA[你不能和自己猜拳！]]></item>
+				<item id="cqgame_22"><![CDATA[您的现金不够游戏，先去赚钱吧！]]></item>
+				<item id="cqgame_23"><![CDATA[本房间已关闭,去挑站其它房间吧]]></item>
+				<item id="cqgame_24"><![CDATA[你出 ]]></item>
+				<item id="cqgame_25"><![CDATA[出 ]]></item>
+				<item id="cqgame_26"><![CDATA[删除成功！]]></item>
+				<item id="cqgame_27"><![CDATA[石头]]></item>
+				<item id="cqgame_28"><![CDATA[剪子]]></item>
+				<item id="cqgame_29"><![CDATA[布]]></item>
+				<item id="cqgame_30"><![CDATA[输]]></item>
+				<item id="cqgame_31"><![CDATA[平]]></item>
+				<item id="cqgame_32"><![CDATA[赢]]></item>
+				<item id="cqgame_33"><![CDATA[未定义]]></item>
+				<item id="cqgame_34"><![CDATA[个]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="right_1"><![CDATA[用户名：]]></item>
+				<item id="right_2"><![CDATA[当前积分：]]></item>
+				<item id="right_3"><![CDATA[当前]]></item>
+				<item id="right_4"><![CDATA[当前战绩：]]></item>
+				<item id="right_5"><![CDATA[<p>版权信息
+    </p>
+  <p>亮剑猜拳游戏 V2.5
+  </p>
+  <p><a href="http://bbs.seoeye.cn">@亮剑Discuz!</a></p>]]></item>
+				<item id="createroom_1"><![CDATA[猜拳游戏]]></item>
+				<item id="createroom_2"><![CDATA[创建房间]]></item>
+				<item id="createroom_3"><![CDATA[猜拳需要的]]></item>
+				<item id="createroom_4"><![CDATA[大于]]></item>
+				<item id="createroom_5"><![CDATA[，小于]]></item>
+				<item id="createroom_6"><![CDATA[猜拳批量开房数：]]></item>
+				<item id="createroom_7"><![CDATA[批量开房数量，一次提交最多开设]]></item>
+				<item id="createroom_8"><![CDATA[个房间，不填默认开1个]]></item>
+				<item id="createroom_9"><![CDATA[请选择你出的拳：]]></item>
+				<item id="createroom_10"><![CDATA[随机]]></item>
+				<item id="createroom_11"><![CDATA[石头]]></item>
+				<item id="createroom_12"><![CDATA[剪子]]></item>
+				<item id="createroom_13"><![CDATA[布]]></item>
+				<item id="createroom_14"><![CDATA[请选择你的对方：]]></item>
+				<item id="createroom_15"><![CDATA[电脑]]></item>
+				<item id="createroom_16"><![CDATA[论坛所有用户]]></item>
+				<item id="createroom_17"><![CDATA[指定用户]]></item>
+				<item id="createroom_18"><![CDATA[指定用户的用户名：]]></item>
+				<item id="createroom_19"><![CDATA[如果没有选择指定用户请不填]]></item>
+				<item id="createroom_20"><![CDATA[房间个性描述：]]></item>
+				<item id="createroom_21"><![CDATA[不填写将采用系统默认语言]]></item>
+				<item id="createroom_22"><![CDATA[总共]]></item>
+				<item id="createroom_23"><![CDATA[条记录]]></item>
+				<item id="createroom_24"><![CDATA[当前第]]></item>
+				<item id="createroom_25"><![CDATA[页]]></item>
+				<item id="createroom_26"><![CDATA[ 提 交 ]]></item>
+				<item id="enterroom_1"><![CDATA[的房间]]></item>
+				<item id="enterroom_2"><![CDATA[房间主人：]]></item>
+				<item id="index_1"><![CDATA[游戏大厅]]></item>
+				<item id="index_2"><![CDATA[房间编号]]></item>
+				<item id="index_3"><![CDATA[房间主人]]></item>
+				<item id="index_4"><![CDATA[房间个性描述]]></item>
+				<item id="index_5"><![CDATA[限定用户]]></item>
+				<item id="index_6"><![CDATA[操作]]></item>
+				<item id="index_7"><![CDATA[限定用户：]]></item>
+				<item id="index_8"><![CDATA[电脑]]></item>
+				<item id="index_9"><![CDATA[面向全部会员]]></item>
+				<item id="index_10"><![CDATA[[进入房间]]]></item>
+				<item id="index_11"><![CDATA[[删除]]]></item>
+				<item id="index_12"><![CDATA[查看对战结果]]></item>
+				<item id="index_13"><![CDATA[你无权查看]]></item>
+				<item id="index_14"><![CDATA[你确定要删除本房间吗？]]></item>
+				<item id="log_1"><![CDATA[我的战绩]]></item>
+				<item id="log_2"><![CDATA[对手]]></item>
+				<item id="log_3"><![CDATA[猜拳时间]]></item>
+				<item id="log_4"><![CDATA[输赢]]></item>
+				<item id="loglist_1"><![CDATA[战斗史]]></item>
+				<item id="nav_1"><![CDATA[猜拳风云榜]]></item>
+				<item id="nav_2"><![CDATA[数据清理]]></item>
+				<item id="ranklist_1"><![CDATA[风云榜]]></item>
+				<item id="ranklist_2"><![CDATA[幸运榜]]></item>
+				<item id="ranklist_3"><![CDATA[衰神榜]]></item>
+				<item id="ranklist_4"><![CDATA[排名]]></item>
+				<item id="ranklist_5"><![CDATA[用户名]]></item>
+				<item id="ranklist_6"><![CDATA[所赢]]></item>
+				<item id="ranklist_7"><![CDATA[总数]]></item>
+				<item id="del_1"><![CDATA[清理多少天以前的战斗历史]]></item>
+				<item id="del_2"><![CDATA[请填写一个天数，作为清理多少天以前的战斗历史(即保留多少天内的数据)]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

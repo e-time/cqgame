@@ -1,0 +1,53 @@
+{template common/header}
+<div class="wp cl">
+
+<div class="main">
+<div class="left"><link href="source/plugin/cqgame/css/style.css" rel="stylesheet" type="text/css">
+{template cqgame:nav}
+
+
+<div class="pta">
+<img style="float:left;" src="source/plugin/cqgame/images/dq.png"><span style="float:left;">&nbsp;<a href="plugin.php?id=cqgame">{lang cqgame:createroom_1}</a> &gt;&gt; {lang cqgame:ranklist_1}</span>
+<span style="float:right;">&nbsp;<!--{if $_G[lj_tips]}-->$_G[lj_tips]<!--{else}-->$config['gg']<!--{/if}--></span><img style="float:right;" src="source/plugin/cqgame/images/gg.png">
+</div >
+<!--{if $_G['groupid']!=1}-->
+<div class="navcq">
+<ul>
+<li <!--{if !$_G['lj_do']||$_G['lj_do']=='lucky'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame&act=ranklist&do=lucky">{lang cqgame:ranklist_2}</a></li>
+<li <!--{if $_G['lj_do']=='recession'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame&act=ranklist&do=recession">{lang cqgame:ranklist_3}</a></li>
+</ul>
+</div>
+<!--{/if}-->
+<div class="table">
+<table width="720" cellspacing="1" cellpadding="0">
+  <tbody><tr align="center">
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:ranklist_4}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:ranklist_5}</strong></td>
+    <td width="90" background="source/plugin/cqgame/images/bj.jpg" height="30"><strong>{lang cqgame:ranklist_6}{$_G['setting']['extcredits'][$config['credit']]['title']}{lang cqgame:ranklist_7}</strong></td>
+  </tr>
+ <!--{loop $arr $k=>$log}-->
+    <tr align="center" height="28">
+    <td bgcolor="#fffac7" style="border:1px solid #ff9900;border-top:none">{eval echo $k+1;}</td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none">$log[username]</td>
+    <td bgcolor="#ffffff" style="border:1px solid #ff9900;border-top:none">
+   $log[money]
+    
+</td>
+  </tr>
+ <!--{/loop}-->
+</tbody></table>
+<!--{if $_G['groupid']==1}-->
+<div class="pag">
+<div style="float:left;">&nbsp;&nbsp;{lang cqgame:createroom_22}<span class="STYLE3">{eval echo $num}</span>{lang cqgame:createroom_23}<!--£¬{lang cqgame:createroom_24}&nbsp;<!--{if $_G['lj_page']}-->$_G['lj_page']<!--{else}-->1<!--{/if}-->&nbsp;{lang cqgame:createroom_25}--></div>{$paging}
+
+</div>
+<!--{/if}-->
+</div>
+</div>
+{template cqgame:right}
+</div>
+</div>
+</div>
+{template common/footer}

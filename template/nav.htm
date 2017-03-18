@@ -1,0 +1,17 @@
+<div class="navcq">
+<ul>
+<li <!--{if !$_G['lj_act']||$_G['lj_act']=='enterroom'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame">{lang cqgame:index_1}</a></li>
+<li <!--{if $_G['lj_act']=='loglist'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame&act=loglist">{lang cqgame:loglist_1}</a></li>
+<li <!--{if $_G['lj_act']=='createroom'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame&act=createroom">{lang cqgame:createroom_2}</a></li>
+<li <!--{if $_G['lj_act']=='log'}-->class="cur"<!--{/if}-->>
+<a  href="plugin.php?id=cqgame&act=log">{lang cqgame:log_1}</a></li>
+<li <!--{if $_G['lj_act']=='ranklist'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame&act=ranklist">{lang cqgame:nav_1}</a></li>
+<!--{if $ql}--><li <!--{if $_G['lj_act']=='del'}-->class="cur"<!--{/if}-->>
+<a href="plugin.php?id=cqgame&act=del">{lang cqgame:nav_2}</a></li><!--{/if}-->
+</ul>
+
+</div>

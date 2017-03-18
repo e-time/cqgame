@@ -1,0 +1,21 @@
+<div class="right">
+
+<div class="right_1">
+<div style="margin-left:50px;"><!--{eval echo avatar($_G['uid'],'small');}--></div>
+<img src="source/plugin/cqgame/images/left_4.gif">&nbsp;&nbsp;{lang cqgame:right_1}{$_G['username']}<br>
+<img src="source/plugin/cqgame/images/left_4.gif">&nbsp;&nbsp;{lang cqgame:right_2}<span class="STYLE3">{$_G[member][credits]}</span>
+<br><img src="source/plugin/cqgame/images/left_4.gif">&nbsp;&nbsp;{lang cqgame:right_3}{$_G['setting']['extcredits'][$config['credit']]['title']}&nbsp;:&nbsp;<span class="STYLE3">{$mycredit}</span>
+<br><img src="source/plugin/cqgame/images/left_4.gif">&nbsp;&nbsp;{lang cqgame:right_4}
+<span class="STYLE4"><strong>{$count}</strong></span></div>
+
+<div class="right_2">
+<ul>
+<!--{loop $new $user}-->
+<li><!--{eval echo avatar($user['uid'],'small');}--><span class="STYLE1"><strong><a href="space-uid-{$user['uid']}.html">{$user['username']}</a></strong></span>
+<!--{/loop}-->
+</li></ul>
+</div>
+<div class="right_3">
+  $config['banquan']
+</div>
+</div>

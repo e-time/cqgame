@@ -1,0 +1,33 @@
+{template common/header}
+<div class="wp cl">
+<style type="text/css">
+.table  tr, th, td{margin: 10px;
+    padding: 10px;}
+</style>
+<div class="main">
+<div class="left"><link href="source/plugin/cqgame/css/style.css" rel="stylesheet" type="text/css">
+{template cqgame:nav}
+
+
+<div class="pta">
+<img style="float:left;" src="source/plugin/cqgame/images/dq.png"><span style="float:left;">&nbsp;<a href="plugin.php?id=cqgame">{lang cqgame:createroom_1}</a> &gt;&gt; {lang cqgame:nav_2}</span>
+</div>
+<div class="table">
+
+  <div style="padding: 0 10px 10px;">
+<table cellspacing="0" cellpadding="4" border="0" width="95%">
+<tr><form action="plugin.php?id=cqgame&act=del"  name="addhome" method="post"><td>
+<input type="hidden" name="formhash" value="{FORMHASH}">
+<span style="color:red;">*</span>&nbsp;{lang cqgame:del_1}&nbsp;:&nbsp;<input type="text" style="width:30px" size="20" name="del_ql" value="">&nbsp;{lang cqgame:del_2}</td></tr>
+<tr><td><!--<span style="color:red;">*</span>&nbsp;{lang cqgame:createroom_6}<input type="text" size="20" name="roomnum" value="">{lang cqgame:createroom_7}$config['roomnum']{lang cqgame:createroom_8}--></td></tr>
+<tr><td><input type="submit" name="submit"  value="{lang cqgame:createroom_26}">&nbsp;&nbsp;&nbsp;&nbsp;
+<tr><td><hr size=1 color="{BORDERCOLOR}"></td></tr>
+
+</table></div>
+</div>
+</div>
+{template cqgame:right}
+</div>
+</div>
+</div>
+{template common/footer}
